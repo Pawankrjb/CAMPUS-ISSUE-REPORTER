@@ -222,7 +222,7 @@ const verifyReport = async (req, res) => {
     } else if (status === 'verified') {
       // Update report
       report.status = status;
-      report.maintainerId = null; // Leave null so maintainers can pick
+      report.maintainerId = null; // Leave null so maintainers in the department can pick
       report.maintainerName = null;
       report.department = department;
       report.verifiedAt = new Date();
